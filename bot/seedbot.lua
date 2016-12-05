@@ -234,7 +234,7 @@ function create_config( )
 	"lock_fwd",
 	"lock_join",
 	"lock_media",
-	"lock_tag",
+	"lock_ta
 	"lock_username",
 	"msg_checks",
 	"onservice",
@@ -256,10 +256,10 @@ function create_config( )
 	"security",
 	"lock_inline"
     },
-    sudo_users = {299453239,182255045,0,tonumber(our_id)},--Sudo users
+    sudo_users = {249900391,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-	@permag_bots
+	@ab2002ab
 ]],
     help_text_realm = [[
 ]],
