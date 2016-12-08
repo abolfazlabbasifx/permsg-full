@@ -234,8 +234,8 @@ function create_config( )
 	"lock_fwd",
 	"lock_join",
 	"lock_media",
-	"lock_ta
-	"lock_username",
+	"lock_tag",
+"lock_username",
 	"msg_checks",
 	"onservice",
 	"owners",
