@@ -255,7 +255,7 @@ function create_config( )
 	"muteall",
 	"security",
 	"lock_inline"
-    },    sudo_users = {249900391,185860631,0,tonumber(our_id)},--Sudo users
+    },    sudo_users = {249900391,279770600,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[
 	@ab2002ab
