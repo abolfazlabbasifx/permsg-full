@@ -3,69 +3,69 @@ local permagbot = [[
 ➖➖➖➖➖➖➖
 ✔️لیست دستورات مدیریتی
 ➖➖➖➖➖➖➖ 
-🔻#info :  پروفايل کاربر
+🔻info :  پروفايل کاربر
 〰〰〰〰〰
-🔻#admins : نمايش ليست مديران گروه
+🔻admins : نمايش ليست مديران گروه
 〰〰〰〰〰
-🔻#owner : مدير اصلي ربات
+🔻owner : مدير اصلي ربات
 〰〰〰〰〰
-🔻#modlist : لیست ناظرین
+🔻modlist : لیست ناظرین
 〰〰〰〰〰
-🔻#bots : ليست ربات هاي گروه
+🔻bots : ليست ربات هاي گروه
 〰〰〰〰〰
-🔻#who :ليست همه کابران گروه به همراه ايدي
+🔻who :ليست همه کابران گروه به همراه ايدي
 〰〰〰〰〰
-🔻#id : با زدن یوزر نیم شخص ایدی شخص را دریافت کنید
-mesal : #id @permag_bots
+🔻id : با زدن یوزر نیم شخص ایدی شخص را دریافت کنید
+mesal : #id @TeleGUardsupportRobot
 〰〰〰〰〰
-🔻#promote : کاربر مورد نظر ناظر ربات میشود
-▫️mesal : /promote @iduser
+🔻promote : کاربر مورد نظر ناظر ربات میشود
+▫️mesal : promote @iduser
 〰〰〰〰〰
-🔻#demote : کاربر از لیست ناظرین خط میخورد
-▫️mesal : /demote @iduser
+🔻demote : کاربر از لیست ناظرین خط میخورد
+▫️mesal : demote @iduser
 〰〰〰〰〰
-🔻#setrules : تعيين کردن قوانين براي گروه
-▫️mesal : /setrules قوانين خود را بنويسيد
+🔻setrules : تعيين کردن قوانين براي گروه
+▫️mesal : setrules قوانين خود را بنويسيد
 〰〰〰〰〰
-🔻#rules : نمايش قوانين گروه
+🔻rules : نمايش قوانين گروه
 〰〰〰〰〰
-🔻#link : نمايش لينک گروه
+🔻link : نمايش لينک گروه
 〰〰〰〰〰
-🔻#setlink : ثبت لینک گروه
+🔻setlink : ثبت لینک گروه
 لینک گروه را بسازید سپس به ربات بدهید
 〰〰〰〰〰
-🔻#settings : نمايش تنظيمات گروه
+🔻settings : نمايش تنظيمات گروه
 〰〰〰〰〰
-🔻#clean [rules|modlist|mutelist]
+🔻clean [rules|modlist|mutelist]
 پاک کردن موارد بالا
-▫️mesal /clean rules  اين دستور قوانين ثبت شده را پاک ميکند
+▫️mesal : clean rules  اين دستور قوانين ثبت شده را پاک ميکند
 〰〰〰〰〰
 🔻بن کردن یک کاربر
-#ban
+ban
 mesal : ban 12566885
 میتوانید با ایدی یا یوزر نیم کاربر را بن کنید
 در صورتی که کاربر را بن کنید دیگر نمیتواند به گروه وارد شود 
-#unban 
+unban 
 با یوزر نیم یا ایدی میتوانید کاربر را از بن خارج کنید
-mesal :#unban 1235465
+mesal : unban 1235465
 〰〰〰〰〰
-🔻#banlist : نمايش کاربران بن شده
+🔻banlist : نمايش کاربران بن شده
 〰〰〰〰〰
-🔻#filter : 
+🔻filter : 
 فیلتر کردن یک کلمه 
-mesal :filter فحش
+mesal : filter فحش
 برای لغو
 unfilter فحش
 〰〰〰〰〰
-🔻#rmsg (1-100)
+🔻rmsg (1-100)
 حذف پیام های اخیر سوپرگروه
 〰〰〰〰〰
-🔻#setwlc متن
+🔻setwlc متن
 متن خوش آمد گویی به کاربر را میتوانید ست کنید
-🔻#delwlc
+🔻delwlc
 غیرفعال کردن خوش آمد گویی
 〰〰〰〰〰
-➰شما میتوانید از '/' یا '!' یا '#' برای اجرای دستورات استفاده کنید.
+
 ❌ توجه کنید هیچ دستوری با ریپلی کار نمیکنداز یوزرنیم یا ایدی شخص استفاده کنید
 
 ]]
@@ -74,105 +74,106 @@ local permagbot2 = [[
 ✔️لیست دستورات قفلی:
 ➖➖➖➖➖➖➖
 💬 قفل تبلیغات شیشه ای و هایپرلینک
-🔒#lock inline
-🔒#unlock inline
+🔒lock inline
+🔒unlock inline
 پست های دارای دکمه شیشه ای یا هایپرلینک ها پاک خواهند شد
 〰〰〰〰〰
 💬 قفل کردن لینک
-🔒#lock links
-🔒#unlock links
+
+🔒lock links
+🔒unlock links
 حتی مطالبی که دارای لینک باشند حذف خواهند شد
 〰〰〰〰〰
 💬 قفل کردن پیام های گروه
-🔒#lock tgservice
-🔒#unlock tgservice
+🔒lock tgservice
+🔒unlock tgservice
 شخصی با لینک وارد گروه میشود و یا گروه را ترک میکند گروه پیغام میدهد
 با قفل کردن این سرویس اعلانات خاموش خواهد شد
 〰〰〰〰〰
 💬 قفل کردن پست رگباری
-🔒#lock flood
-🔒#unlock flood
+🔒lock flood
+🔒unlock flood
 〰〰〰〰〰
 💬 قفل کردن اسپم
 توجه : پیام های طولانی حذف خواهند شد 
-🔒#lock spam
-🔒#unlock spam
+🔒lock spam
+🔒unlock spam
 〰〰〰〰〰
 💬 قفل زبان عربی و فارسی
-🔒#lock Arabic
-🔒#unlock Arabic
+🔒lock Arabic
+🔒unlock Arabic
 〰〰〰〰〰
 💬 قفل اعضا
 کاربران نمیتوانند وارد گروه شوند
-🔒#lock member
-🔒#unlock member
+🔒lock member
+🔒unlock member
 〰〰〰〰〰
 💬 قفل راستچین
 زبان فارسی و عربی کار نخواهد کرد
-🔒#lock rtl
-🔒#unlock rtl
+🔒lock rtl
+🔒unlock rtl
 〰〰〰〰〰
 💬 قفل استیکر
-🔒#lock sticker
-🔒#unlock sticker
+🔒lock sticker
+🔒unlock sticker
 〰〰〰〰〰
 💬 قفل شماره تماس
-🔒#lock contacts
-🔒#unlock contacts
+🔒lock contacts
+🔒unlock contacts
 〰〰〰〰〰
 💬 ربات سختگیرانه شود
 ربات سختگیرانه میشود و کاربر خطا کار را پاک میکند - پیشنهاد میشود فعال نکنید
-🔒#lock strict
-🔒#unlock strict
+🔒lock strict
+🔒unlock strict
 〰〰〰〰〰
 💬 قفل فوروارد
-🔒#lock fwd
-🔒#unlock fwd
+🔒lock fwd
+🔒unlock fwd
 〰〰〰〰〰
 💬 قفل کردن یوزر نیم
 اگر در گروه کسی یوزر نیم ارسال کند پاک خواهد شد .
-🔒#lock username
-🔒#unlock username
+🔒lock username
+🔒unlock username
 〰〰〰〰〰
 💬 قفل موزیک
-🔒#mute audio
-🔒#unmute audio
+🔒mute audio
+🔒unmute audio
 〰〰〰〰〰
 💬 قفل گیف
-🔒#mute gifs
-🔒#unmute gifs
+🔒mute gifs
+🔒unmute gifs
 〰〰〰〰〰
 💬 قفل عکس
-🔒#mute photo
-🔒#unmute photo
+🔒mute photo
+🔒unmute photo
 〰〰〰〰〰
 💬 قفل ویدیو
-🔒#mute video
-🔒#unmute video
+🔒mute video
+🔒unmute video
 〰〰〰〰〰
 💬 تنظیم حداکثر پست های رگباری
-🔒#setflood [value]
-▫️mesal = /setflood 10 
+🔒setflood [value]
+▫️mesal = setflood 10 
 〰〰〰〰〰
-🔒#muteuser : صامت کردن يک کاربر ، جلوگيري از ارسال پيام توسط آن کاربر
-▫️mesal : /muteuser @user  ya  /muteuser 16516512 
+🔒muteuser : صامت کردن يک کاربر ، جلوگيري از ارسال پيام توسط آن کاربر
+▫️mesal : muteuser @user  ya  muteuser 16516512 
 با ارسال مجدد همين دستور قفل کاربر برداشته ميشود
 〰〰〰〰〰
 💬 ساکت کردن همه کاربران گروه(چت ممنوع)
-🔒#ساکت کردن همه
+🔒ساکت کردن همه
 〰〰〰〰〰
 💬 ساکت کردن کاربران برای زمانی مشخص(جای (X=ساعت)(Y=دقیقه)(Z=ثانیه)قرار دهید)
-🔒#ساکت کردن همه Xh Ym Zs
+🔒ساکت کردن همه Xh Ym Zs
 مثلا:صامت کردن همه 2h 1m 0s
 〰〰〰〰〰
 💬 خارج کردن از صامت(چت آزاد)
-🔒#مصوت کردن همه
+🔒مصوت کردن همه
 〰〰〰〰〰
 💬نمايش ليست موارد غير فعال شده مانند عکس و ويديو	
-🔒#muteslist : 
+🔒muteslist : 
 〰〰〰〰〰
 💬نمايش کاربران خفه شده 
-🔒#mutelist : 
+🔒mutelist : 
 
 ]]
 local permagbot3 = [[
@@ -233,21 +234,21 @@ local permagbot7 = [[
 
 ✏️ دستورات:
 ☆دستورات قفلی
-🎗》#قفل
+🎗》قفل
 ☆دستورات فان
-🎗》#فان
+🎗》فان
 ☆دستورات مدیریتی
-🎗》#مدیریت
+🎗》مدیریت
 ☆حذف و نصب پلاگین ها
-🎗》#پلاگین
+🎗》پلاگین
 ==============
 🎲دستورات قفل و مدیریت فقط برای مدیران ربات کار میکند 
 دستورات بخش فان برای همه کاربران کار میکند
 ________________
 ✏️برای مشاهده تغییراتی که انجام داده اید از این سه دستور استفاده کنید
-#settings
-#muteslist
-#banlist
+settings
+muteslist
+banlist
 قفل تگ و فوروارد در لیست ها نیستند دستی چک کنید
 ...
 ]]
@@ -306,12 +307,12 @@ return {
       description = '',
       usage = '',
       patterns = {
-    '^[!#/](مدیریت)$',
-    '^[!#/](قفل)$',
-	'^[!#/](پلاگین)$',
-    '^[!#/](فان)$',
-    '^[!#/](help)$',
-    '^[!#/](راهنما)$',
+    '^(مدیریت)$',
+    '^(قفل)$',
+	'^(پلاگین)$',
+    '^(فان)$',
+    '^(help)$',
+    '^(راهنما)$',
       },
       run = run,
 }
