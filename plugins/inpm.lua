@@ -1,4 +1,4 @@
-﻿local function pre_process(msg)
+local function pre_process(msg)
 local to = msg.to.type
 local service = msg.service
 	if to == 'user' and msg.fwd_from then
@@ -10,19 +10,19 @@ local service = msg.service
 		if msg.fwd_from.first_name then
 			from_first_name = msg.fwd_from.first_name:gsub("_", " ")
 		else
-			from_first_name = "None"
+			from_first_name = "ندارد"
 		end
 		if msg.fwd_from.last_name then
 			from_last_name = msg.fwd_from.last_name:gsub("_", " ")
 		else
-			from_last_name = "None"
+			from_last_name = "ندارد"
 		end
 		if msg.fwd_from.username then
 			from_username = "@"..msg.fwd_from.username
 		else
-			from_username = "@[none]"
+			from_username = "@[ندارد]"
 		end
-		text = "User From Info:\n\nID: "..from_id.."\nFirst: "..from_first_name.."\nLast: "..from_last_name.."\nUsername: "..from_username
+		text = "User From Info:\n\nآیدی: "..from_id.."\nنام: "..from_first_name.."\nنام خانواندگی: "..from_last_name.."\nنام کاربری: "..from_username
 		send_large_msg(user, text)
 	end
 	return msg
@@ -192,9 +192,9 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 		local username = msg.action.user.username
 		savelog(msg.from.id, "Added Admin "..user_name.."  "..user_id.." to chat "..group_name.." (ID:"..msg.to.id..")")
 		if username then
-			send_large_msg("user#id"..user_id, "Added admin\n@"..username.."["..user_id.."] to chat:\n 👥 "..group_name.." (ID:"..msg.to.id..")" )
+			send_large_msg("user#id"..user_id, "ادمین اضافه شد\n@"..username.."["..user_id.."] گروه:\n 👥 "..group_name.." (ID:"..msg.to.id..")" )
 		else
-			send_large_msg("user#id"..user_id, "Added admin:\n["..user_id.."] to chat:\n 👥 "..group_name.." (ID:"..msg.to.id..")" )
+			send_large_msg("user#id"..user_id, "ادمین اضافه شد:\n["..user_id.."] گروه:\n 👥 "..group_name.." (ID:"..msg.to.id..")" )
 		end
 	end
 
@@ -208,7 +208,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 
 	if matches[1] == 'help' and msg.to.type == 'user' or matches[1] == 'pmhelp' and is_admin1(msg) and msg.to.type ~= 'user' then
       	savelog(msg.to.id, name_log.." ["..msg.from.id.."] used pm help")
-		text = "Welcome to TeleSeed!\n\nTo get a list of TeleSeed groups use /chats or /chatlist for a document list of chats.\n\nTo get a new TeleSeed group, contact a support group:\n\nFor English support, use: /join English support\n\nFor Persian support, use: /join Persian support\n\nFor more information, check out our channels:\n\n@TeleseedCH [English]\n@Iranseed [Persian]\n\nThanks for using @TeleSeed!"
+		text = "سلام \nخوش آمدید\nبرای ساخت مشابه این ربات میتوانید به کانال تیم تله گارد بروید\n@TeleGuardSupportrobot\nبهترین ربات هوشمند تلگرامی\nتیم تله گارد"
      	return text
     end
 
